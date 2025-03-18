@@ -25,3 +25,15 @@ function atualizarLista() {
         lista.appendChild(li);
     });
 }
+
+function sortearAmigo() {
+    const resultado = document.getElementById('resultado');
+    if (amigos.length === 0) {
+        alert('Adicione pelo menos um amigo antes de sortear.');
+        return;
+    }
+
+    const indice = Math.floor(Math.random() * amigos.length);
+    const amigoSorteado = amigos[indice];
+    resultado.innerHTML = `O amigo secreto é: ${amigoSorteado}`;
+}
