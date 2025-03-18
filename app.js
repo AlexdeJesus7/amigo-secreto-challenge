@@ -36,4 +36,6 @@ function sortearAmigo() {
     const indice = Math.floor(Math.random() * amigos.length);
     const amigoSorteado = amigos[indice];
     resultado.innerHTML = `O amigo secreto é: ${amigoSorteado}`;
+    // Opcional: Limpar após 5 segundos
+    //setTimeout(() => { resultado.innerHTML = ''; }, 5000);
 }
